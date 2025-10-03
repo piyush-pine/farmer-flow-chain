@@ -29,8 +29,8 @@ const Index = () => {
       <section className="relative overflow-hidden px-4 py-12 sm:px-6 lg:px-8">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.primary.light),theme(colors.background))] opacity-20" />
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 md:grid-cols-2">
-          <div className="space-y-6">
-            <Badge className="mb-2 bg-primary/10 text-primary hover:bg-primary/20">
+          <div className="space-y-6 animate-fade-up">
+            <Badge className="mb-2 bg-primary/10 text-primary hover:bg-primary/20 animate-scale-in">
               Blockchain-Powered Agriculture
             </Badge>
             <h1 className="text-4xl font-bold leading-tight text-foreground md:text-5xl">
@@ -53,8 +53,8 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="overflow-hidden rounded-xl border border-border bg-card shadow-glow">
+          <div className="relative animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <div className="overflow-hidden rounded-xl border border-border bg-card shadow-glow animate-glow">
               <div className="aspect-video bg-gradient-to-br from-primary/20 to-buyer/20 p-8">
                 <div className="grid h-full grid-cols-2 gap-4">
                   <div className="rounded-lg bg-card p-4 shadow-md">
