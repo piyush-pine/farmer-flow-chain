@@ -1,4 +1,4 @@
-
+```markdown
 # Farmer Flow Chain
 
 An innovative blockchain-based platform to streamline and enhance the agricultural supply chain, empowering farmers, buyers, and stakeholders with trust, transparency, and efficiency.
@@ -39,3 +39,74 @@ Farmer Flow Chain utilizes Hyperledger Fabric to create a secure, decentralized 
 ### Steps
 
 1. **Clone the Repository**
+   ```
+   git clone https://github.com/piyush-pine/farmer-flow-chain.git
+   cd farmer-flow-chain
+   ```
+
+2. **Set Up Node Environment**
+   (Use Node Version Manager to switch Node versions)
+   ```
+   nvm install 8
+   nvm use 8
+   ```
+
+3. **Install Hyperledger Composer CLI (If using Composer)**
+   > *Note: Hyperledger Composer is deprecated. Alternatively, use Fabric SDKs.*
+   ```
+   npm install -g composer-cli
+   ```
+
+4. **Start Hyperledger Fabric Network**
+   Follow the Fabric network setup commands:
+   ```
+   ./startFabric.sh
+   ./createPeerAdminCard.sh
+   ```
+
+5. **Install Dependencies**
+   ```
+   npm install
+   ```
+
+6. **Deploy the Business Network**
+   ```
+   composer network deploy -a farmer-flow-network.bna -c PeerAdmin@hlfv1
+   ```
+
+7. **Run the Application**
+   ```
+   npm start
+   ```
+
+8. **Access the Application**
+   Open your browser and navigate to `http://localhost:3000`.
+
+---
+
+## Project Structure
+
+- `./business-network-model/` — Blockchain model (.cto files)
+- `./lib/` — Chaincode logic (JavaScript files)
+- `./server/` — Backend API server
+- `./client/` — Frontend application interface
+
+---
+
+## Contribution
+
+Contributions and improvements are welcome. Please create issues or pull requests for any bugs or feature suggestions.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Contact
+
+For queries or collaboration, reach out at piyush-pine@example.com
+```
+This markdown file can be saved as `README.md` in your project root for professional presentation focused on installation, features, and hackathon impact. Would you like help with anything else?
